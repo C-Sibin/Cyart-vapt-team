@@ -1,1 +1,2 @@
-
+Introduction
+The VAPT is a said to be Vulnerability assessment and peneration testing , the Vulenrability assessment is a type of automated scan using tools , and the penetration testing is way of testing the network or the website manually and finding the exploit, moreover the Vulnerability assessement will only identify the securtity weaknesses and provide a compherensive report , they can only detect the known vulnerabilities and it will not exploit the findings, On the other hand penetration testing is to find the weakness and exploit the founded vulnerability and provide the impact of that vulnerability
