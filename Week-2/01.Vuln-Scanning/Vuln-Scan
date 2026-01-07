@@ -1,3 +1,55 @@
-Introduction
+ ==============
+| Introduction |
+ ==============
 The VAPT is a said to be Vulnerability assessment and peneration testing.
-The Vulenrability assessment is a type of automated scan using tools , and the penetration testing is way of testing the network or the website manually and finding the exploit, moreover the Vulnerability assessement will only identify the securtity weaknesses and provide a compherensive report , they can only detect the known vulnerabilities and it will not exploit the findings, On the other hand penetration testing is to find the weakness and exploit the founded vulnerability and provide the impact of that vulnerability
+The Vulenrability assessment is a type of automated scan using tools , and the penetration testing is way of testing the network or the website manually and finding the exploit,
+moreover the Vulnerability assessement will only identify the securtity weaknesses and provide a compherensive report , they can only detect the known vulnerabilities and it will not exploit the findings,
+On the other hand penetration testing is to find the weakness and exploit the founded vulnerability and provide the impact of that vulnerability
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ =================
+| Three scan types |
+ =================
+1. Network Scanning
+2. Application Scanning
+3. Authenticated vs Unauthenticated Scanning
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Network scanning (Nmap)
+======================
+Network scanning is said to be scanning for live hosts, open ports, and running services/versions on a network.
+This is classic recon / footprinting and maps directly to NIST SP 800‑115’s “network discovery” and “port and service identification” activities.
+​
+Common modes:
+=============
+ i. TCP connect scan (-sT)
+    Completes the full TCP 3‑way handshake.
+    Pros: Works as non‑root, very reliable.
+    Cons: Noisy in logs (every connection is real).
+ Example:
+    nmap -sT 192.168.1.100 -sT
+
+Sends SYN; if SYN/ACK, immediately sends RST, never finishes handshake.
+
+Pros: Faster and stealthier than -sT; standard for pentests.
+
+Cons: Needs root; still visible to IDS/IPS.
+
+Used in your lab together with version detection:
+
+bash
+sudo nmap -sS -sV 192.168.1.100
+Service & version detection (-sV)
+
+After finding open ports, Nmap sends probes to figure out service and version (e.g., Apache httpd 2.2.8, vsftpd 2.3.4).
+
+Critical for mapping to CVEs and CVSS scores.
+
+Example:
+
+bash
+nmap -sV 192.168.1.100
+In theory answers, you describe network scanning as: identify live hosts, enumerate ports, fingerprint services/OS, and produce input for vuln scanning.
+​
