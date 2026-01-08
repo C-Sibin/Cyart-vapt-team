@@ -11,13 +11,13 @@ It includes the attacker is interact with the target to gather informations usin
 
 ### Passive Recon:
 Tools Used:
-Shodan
-WHOIS
-whatweb
-wappalyzer
+- Shodan
+- WHOIS
+- whatweb
+- wappalyzer
 
 ### Active Recon:
 Tools Used:
-Nmap
-Feroxbuster
-Gobuster
+- Nmap
+- Feroxbuster
+- Gobuster
