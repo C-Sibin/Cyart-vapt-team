@@ -21,3 +21,6 @@ Tools Used:
 - Nmap
 - Feroxbuster
 - Gobuster
+
+> [!NOTE]
+> All the Result for the scan are available as a PNG
