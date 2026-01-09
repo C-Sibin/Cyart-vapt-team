@@ -8,7 +8,7 @@ DVWA VM IP (192.168.74.16)
 ## out-of-scope:
 No DOS attack
 ## Rule of Engagement:
-- Testing window (lab only), authorized users only.
+- Testing vulnerable lab, authorized users only.
 - Use only agreed tools: Nmap, sqlmap, OpenVAS, Burp, browser.
 
 # Intelligence Gathering
