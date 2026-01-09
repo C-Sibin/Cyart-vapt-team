@@ -22,14 +22,14 @@ Browse to http://192.168.1.200/dvwa/
 <img width="1163" height="822" alt="image" src="https://github.com/user-attachments/assets/37fa611a-d6a6-4042-a330-2713a445090f" />
 
 # Vulnerability Analysis
-## SQL Injection module:
+## SQL Injection:
 DVWA -> SQL Injection (classic GET parameter injection).
 Manually try 1' OR '1'='1 etc. to confirm SQLi.
 
 <img width="1216" height="166" alt="image" src="https://github.com/user-attachments/assets/8da6a2b5-7c46-499d-8e1d-5e1300964e7d" />
 
 
-## XSS modules:
+## XSS:
 Reflected XSS
 Use simple payload:
 <script>alert('XSS')</script>
