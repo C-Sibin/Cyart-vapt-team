@@ -47,8 +47,8 @@ Security testing of DVWA at 192.168.74.16 identified **5 critical vulnerabilitie
 ## POST-EXPLOITATION EVIDENCE
 | Item | Description | Date | SHA256 Hash |
 |------|-------------|------|-------------|
-| passwd | /etc/passwd | 2026-01-16 | 6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b |
-| logs | apache2/access.log | 2026-01-16 | df12d594582a0309a7fabc35c99c96125ba734941c025579ad8a4edcd33cf041 |
+| passwd | /etc/passwd | 2026-01-16 | af23ffe0bc5479a70a17e799fa699f9e593f2151b7e1ba597987523c7c733d42 |
+| logs | apache2/access.log | 2026-01-16 | cd61b5088fe52f553da862db486dd20a |
 
 ## REMEDIATION PRIORITIES
 1. **Week 1:** Patch SQLi + File Upload (Critical)
