@@ -57,23 +57,23 @@ Evidence: Responder logs, ARP tables.
 
 # Risk Assessment
 **Finding	CVSS:** 
-*Express RCE*	9.8	High,
-*Sudo Privesc*	8.8	High,
-*API Info-Disc*	8.1	Medium,
-*SMB Relay*	7.5	Medium,
-*Cron Backdoor*	7.2	Medium.
+- *Express RCE*	9.8	High,
+- *Sudo Privesc*	8.8	High,
+- *API Info-Disc*	8.1	Medium,
+- *SMB Relay*	7.5	Medium,
+- *Cron Backdoor*	7.2	Medium.
 Overall Risk: CRITICAL – chained exploits yield full domain compromise.
 
 Phase 1: [WEB]
-□ Patch Express >1.1.9-alpha.3 (file upload sanitization)
-□ Remove sudo node/npm privileges (sudoers cleanup)
-□ Delete /etc/cron.d/persist-backdoor, audit all crontabs
-□ Deploy WAF (ModSecurity OWASP CRS) blocking command injection
+- Patch Express >1.1.9-alpha.3 (file upload sanitization)
+- Remove sudo node/npm privileges (sudoers cleanup)
+- Delete /etc/cron.d/persist-backdoor, audit all crontabs
+- Deploy WAF (ModSecurity OWASP CRS) blocking command injection
 
 Phase 2: [WEB]
-□ API allowlist validation (BOLA, GraphQL introspection block)
-□ Enable SMB signing, disable LLMNR/NBT-NS (GPO)
-□ Ettercap countermeasures: ARP inspection/DHCP snooping
-□ Mobile: MobSF + Frida for runtime hooks[file:244]
+- API allowlist validation (BOLA, GraphQL introspection block)
+- Enable SMB signing, disable LLMNR/NBT-NS (GPO)
+- Ettercap countermeasures: ARP inspection/DHCP snooping
+- Mobile: MobSF + Frida for runtime hooks
 
 [!NOTE] : Required Imediate actions
