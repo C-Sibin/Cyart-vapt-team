@@ -56,12 +56,12 @@ Evidence: Responder logs, ARP tables.
 ​Android‑x86 lab setup completed with ADB over TCP. jadx-gui static analysis prepared for insecure logging testing per OWASP. ​
 
 # Risk Assessment
-Finding	CVSS	Likelihood	Impact	Priority
-Express RCE	9.8	High	Critical	Immediate
-Sudo Privesc	8.8	High	High	Immediate
-API Info-Disc	8.1	Medium Medium Medium
-SMB Relay	7.5	Medium	High	High
-Cron Backdoor	7.2	Medium	High	High
+**Finding	CVSS:** 
+*Express RCE*	9.8	High,
+*Sudo Privesc*	8.8	High,
+*API Info-Disc*	8.1	Medium,
+*SMB Relay*	7.5	Medium,
+*Cron Backdoor*	7.2	Medium.
 Overall Risk: CRITICAL – chained exploits yield full domain compromise.
 
 Phase 1: [WEB]
