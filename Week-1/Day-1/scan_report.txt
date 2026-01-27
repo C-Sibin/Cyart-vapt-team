@@ -1,0 +1,36 @@
+==== Nmap Automated Scan Report ====
+Scan timestamp : 2025-12-15 14:34:44
+Target         : 192.168.56.7
+
+Host IP        : 192.168.56.7
+Host state     : up
+
+Open Ports and Services:
+Port     Proto    Service              Version                       
+----------------------------------------------------------------------
+21       tcp      ftp                                                
+22       tcp      ssh                                                
+23       tcp      telnet                                             
+25       tcp      smtp                                               
+53       tcp      domain                                             
+80       tcp      http                                               
+111      tcp      rpcbind                                            
+139      tcp      netbios-ssn                                        
+445      tcp      microsoft-ds                                       
+512      tcp      exec                                               
+513      tcp      login                                              
+514      tcp      shell                                              
+1099     tcp      rmiregistry                                        
+1524     tcp      ingreslock                                         
+2049     tcp      nfs                                                
+2121     tcp      ccproxy-ftp                                        
+3306     tcp      mysql                                              
+5432     tcp      postgresql                                         
+5900     tcp      vnc                                                
+6000     tcp      X11                                                
+6667     tcp      irc                                                
+8009     tcp      ajp13                                              
+8180     tcp                                                         
+
+Scan completed successfully.
+====================================
